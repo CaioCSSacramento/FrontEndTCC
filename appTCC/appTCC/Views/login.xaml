@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appTCC.Views.login">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout 
+                Orientation="Vertical"
+                Margin="10,0,10,0">
+
+                <Image 
+                       Margin="3,40,0,3"
+                       Source="LogoTCC.JPG"
+                       HorizontalOptions="CenterAndExpand"/>
+
+
+                <Label
+                    x:Name="lblEmail"
+                    Text="Email:"
+                    />
+
+                <Entry Text="" 
+                   Keyboard="Email"
+                   x:Name="txtEmail"    />
+
+                <Label
+                    x:Name="lblSenha"
+                    Text="Senha:"
+                    />
+
+                <Entry Text=""
+                       IsPassword="True"
+                       x:Name="txtSenha"/>
+
+                <Button
+                x:Name="btnLogin"
+                Clicked="btnLogin_Clicked"
+                Text="Login"
+                TextColor="White"
+                BackgroundColor="IndianRed"
+                Margin="30,0,30,20"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appTCC.Views.menuAluno">
+    <ContentPage.Content>
+        <StackLayout
+            Orientation="Vertical"
+                Margin="10,0,10,0">
+
+            <StackLayout
+             Orientation="Horizontal"
+                Margin="10,0,10,0">
+
+                <Image 
+                    Margin="3,40,0,3"
+                    Source="LogoTCCMini.jpg"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    />
+
+
+                <Label
+                    x:Name="lblMenuAluno"
+                    Text="Menu do Aluno"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    TextColor="Black"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    />
+            </StackLayout>
+
+            <StackLayout
+             Orientation="Vertical"
+                Margin="10,0,10,0">
+
+                <Button
+                x:Name="btnMatricula"
+                Text="FAZER MATRÍCULA"
+                TextColor="White"
+                BackgroundColor="IndianRed"
+                Margin="0,30,0,0"
+                HorizontalOptions="FillAndExpand"/>
+                <Button
+                x:Name="btnBoletim"
+                Text="EMITIR BOLETIM"
+                TextColor="White"
+                BackgroundColor="IndianRed"
+                Margin="0,10,0,0"
+                HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout
+             Orientation="Vertical"
+                Margin="10,0,10,0"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="EndAndExpand">
+
+                <Button
+                x:Name="btnSair"
+                Clicked="btnSair_Clicked"
+                Text="SAIR"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="0,0,0,10"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="EndAndExpand"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
