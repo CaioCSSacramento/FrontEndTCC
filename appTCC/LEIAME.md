@@ -2,10 +2,10 @@
 
 Usuários para acessar o sistema:
 
-Aluno
+Aluno --
 Email:vander@puc.com.br
 Senha:vander12345
 
-Admin
+Admin --
 Email:admin@puc.com.br
 Senha:admin123
